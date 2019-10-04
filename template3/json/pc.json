@@ -1,0 +1,26 @@
+{
+    "Lenovo": {
+        "model": ["geysdfg", "eikfkjg", "kflsdo"],
+        "stock": [242, 123, 674],
+        "price": [993, 245, 243],
+        "thumbnail": ["pc1.png", "pc2.png", "pc1.png"]
+    },
+    "Samsung": {
+        "model": ["asd3r", "d3gdfg", "fa454ff"],
+        "stock": [232, 532, 257],
+        "price": [54, 568, 534],
+        "thumbnail": ["pc2.png", "pc1.png", "pc2.png"]
+    },
+    "Asus": {
+        "model": ["asd3r", "sad3gdfg", "fa454ff"],
+        "stock": [232, 532, 257],
+        "price": [54, 568, 534],
+        "thumbnail": ["pc2.png", "pc1.png", "pc2.png"]
+    },
+    "HP": {
+        "model": ["asd3r", "sad3gdfg", "fa454ff"],
+        "stock": [232, 532, 257],
+        "price": [54, 568, 534],
+        "thumbnail": ["pc2.png", "pc1.png", "pc2.png"]
+    }
+}
