@@ -67,3 +67,7 @@ img {
     width: 100%;
     height: 50%;
 }
+
+.bg-message-login {
+    background: #000000b6;
+}

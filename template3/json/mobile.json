@@ -3,24 +3,24 @@
         "model": ["xo20dcs", "jaflkdfs", "falsjdf2"],
         "stock": [200, 1000, 200],
         "price": [50, 200, 300],
-        "thumbnail": ["laptop1.webp", "laptop2.jpg", "laptop3.jpg"]
+        "thumbnail": ["mobile1.jpg", "mobile2.jpg", "mobile3.jpeg"]
     },
     "Samsung": {
         "model": ["asd3r", "s3gdfg", "fa454ff"],
         "stock": [232, 532, 257],
         "price": [54, 568, 534],
-        "thumbnail": ["laptop1.webp", "laptop3.jpg", "laptop2.jpg"]
+        "thumbnail": ["mobile1.jpg", "mobile3.jpg", "mobile2.jpg"]
     },
     "Asus": {
         "model": ["asd3r", "sad3gdfg", "fa454ff", "fwefld29"],
         "stock": [232, 532, 257, 200],
         "price": [54, 568, 534, 800],
-        "thumbnail": ["laptop3.jpg", "laptop2.jpg", "laptop1.webp", "laptop4.jpg"]
+        "thumbnail": ["mobile3.jpg", "mobile2.jpg", "mobile1.jpg", "mobile4.jpg"]
     },
     "HP": {
         "model": ["asd3r", "sad3gdfg", "fa454ff", "fladjflk"],
         "stock": [232, 532, 257, 200],
         "price": [54, 568, 534, 100],
-        "thumbnail": ["laptop4.jpg", "laptop5.jpg", "laptop1.webp", "laptop3.jpg"]
+        "thumbnail": ["mobile4.jpg", "mobile3.jpeg", "mobile1.jpg", "mobile3.jpg"]
     }
 }

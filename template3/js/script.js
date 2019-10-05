@@ -34,7 +34,7 @@ Get_request = {
             $('#aside-right').append('<div class = "row" id="aside-row"> </div>')
             Object.entries(data).forEach(function(entry) {
                 let brand = entry[0]
-                for (i = 0; i < Object.keys(entry[1]).length - 1; i++) {
+                for (i = 0; i < Object.keys(entry[1]).length; i++) {
                     if (Number(entry[1]['price'][i]) > Number(min) && Number(entry[1]['price'][i]) < Number(max)) {
                         if (brand == $('input[type="radio"]').val()) {
                             let the_id = brand + entry[1]['model'][i];
@@ -62,9 +62,10 @@ Get_request = {
             $('#aside-right').append('<div class = "row" id="aside-row"> </div>')
             Object.entries(data).forEach(function(entry) {
                 let brand = entry[0]
-                for (i = 0; i < Object.keys(entry[1]).length - 1; i++) {
+                for (i = 0; i < Object.keys(entry[1]).length; i++) {
                     if (Number(entry[1]['price'][i]) > Number(min) && Number(entry[1]['price'][i]) < Number(max)) {
                         if (brand == value) {
+                            console.log(brand)
                             let the_id = brand + entry[1]['model'][i];
                             let thumbnail = entry[1]['thumbnail'][i];
                             let stock = entry[1]['stock'][i];
@@ -90,6 +91,24 @@ $(document).ready(function() {
 
     $('#pcs').click(function() {
         Get_request.normal('pc.json', 'pcs')
+    })
+
+    $('#mobiles').click(function() {
+        Get_request.normal('mobile.json', 'mobiles')
+    })
+
+    $('#login').click(function() {
+        $.get('login.html', function(data) {
+            $('main').empty()
+            $('main').html(data)
+        })
+    })
+
+    $('#signup').click(function() {
+        $.get('signup.html', function(data) {
+            $('main').empty()
+            $('main').html(data)
+        })
     })
 
     $('#price-slide').slider({
