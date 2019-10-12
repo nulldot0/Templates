@@ -14,11 +14,11 @@ Get_request = {
                             let stock = entry[1]['stock'][i];
                             let price = entry[1]['price'][i];
 
-                            $('#aside-row').append('<div class="col-3 p-3" id="' + brand + i + '"></div>')
-                            $('#' + brand + i).append('<div class="card" style="width: 13rem; height:20rem;" id="' + the_id + '"></div>')
-                            $('#' + the_id).append('<img class="card-img-top" src="image/' + thumb_path + '/' + thumbnail + '" alt="Card image cap"></div><div class="card-body"></div>')
+                            $('#aside-row').append('<div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-12 d-flex justify-content-center p-3" id="' + brand + i + '"></div>')
+                            $('#' + brand + i).append('<div class="card w-100 h-100" id="' + the_id + '"></div>')
+                            $('#' + the_id).append('<img class="card-img-top" src="image/' + thumb_path + '/' + thumbnail + '" alt="Card image cap"></div><div class="card-body d-flex flex-column justify-content-around"></div>')
                             $('#' + the_id).find('.card-body').append('<h5 class="card-title">' + brand + ' ' + entry[1]['model'][i] + '</h5>')
-                            $('#' + the_id).find('.card-body').append(' <p class="card-text">$' + price + '</p><a href="#" class="btn btn-primary">Add to cart</a>')
+                            $('#' + the_id).find('.card-body').append(' <p class="card-text">$' + price + '</p><a href="#" class="btn btn-primary d-block">Add to cart</a>')
                         }
                     }
                 })
@@ -42,7 +42,7 @@ Get_request = {
                             let stock = entry[1]['stock'][i];
                             let price = entry[1]['price'][i];
 
-                            $('#aside-row').append('<div class="col-3 p-3" id="' + brand + i + '"></div>')
+                            $('#aside-row').append('<div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-12 d-flex justify-content-center p-3" id="' + brand + i + '"></div>')
                             $('#' + brand + i).append('<div class="card" style="width: 13rem; height:20rem;" id="' + the_id + '"></div>')
                             $('#' + the_id).append('<img class="card-img-top" src="image/' + thumb_path + '/' + thumbnail + '" alt="Card image cap"></div><div class="card-body"></div>')
                             $('#' + the_id).find('.card-body').append('<h5 class="card-title">' + brand + ' ' + entry[1]['model'][i] + '</h5>')
@@ -65,13 +65,12 @@ Get_request = {
                 for (i = 0; i < Object.keys(entry[1]).length; i++) {
                     if (Number(entry[1]['price'][i]) > Number(min) && Number(entry[1]['price'][i]) < Number(max)) {
                         if (brand == value) {
-                            console.log(brand)
                             let the_id = brand + entry[1]['model'][i];
                             let thumbnail = entry[1]['thumbnail'][i];
                             let stock = entry[1]['stock'][i];
                             let price = entry[1]['price'][i];
 
-                            $('#aside-row').append('<div class="col-3 p-3" id="' + brand + i + '"></div>')
+                            $('#aside-row').append('<div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-12 d-flex justify-content-center p-3" id="' + brand + i + '"></div>')
                             $('#' + brand + i).append('<div class="card" style="width: 13rem; height:20rem;" id="' + the_id + '"></div>')
                             $('#' + the_id).append('<img class="card-img-top" src="image/' + thumb_path + '/' + thumbnail + '" alt="Card image cap"></div><div class="card-body"></div>')
                             $('#' + the_id).find('.card-body').append('<h5 class="card-title">' + brand + ' ' + entry[1]['model'][i] + '</h5>')

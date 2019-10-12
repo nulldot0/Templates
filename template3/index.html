@@ -12,29 +12,40 @@
 
 <body>
     <header>
-        <ul class="nav nav-pills py-2 pl-3">
-            <li class="nav-item">
-                <a class="nav-link" href="/">Home</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Shop</a>
-                <div class="dropdown-menu">
-                    <a class="dropdown-item" href="#laptop" id="laptops">Laptops</a>
-                    <a class="dropdown-item" href="#pc" id="pcs">Desktops</a>
-                    <a class="dropdown-item" href="#mobile" id="mobiles">Mobiles</a>
-                </div>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#" id="login">Login</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#" tabindex="-1" aria-disabled="true" id="signup">Sign up</a>
-            </li>
-        </ul>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/">Home</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Shop
+                  </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#laptop" id="laptops">Laptops</a>
+                            <a class="dropdown-item" href="#pc" id="pcs">PCs</a>
+                            <a class="dropdown-item" href="#mobile" id="mobiles">Mobiles</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="login">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="signup">Sign up</a>
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
     </header>
     <main>
         <section id="home" class="container-fluid d-flex justify-content-center align-items-center">
-            <img id="img-bg" src="https://azcd.harveynorman.com.au/media/catalog/product/r/a/razer-blade-15-c1nt-15-6-inch-gaming-laptop-1.jpg" alt="">
             <div>
                 <h1 class="text-white text-center">Technology of the future</h1>
                 <p class="text-white text-center">We make gaming experience to the next level</p>

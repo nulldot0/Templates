@@ -1,3 +1,5 @@
 # Template no. 3
 
-Not responsive yet.
+Responsive e-commerce website with no back end.
+
+Visit http://www.hilario1.orgfree.com
